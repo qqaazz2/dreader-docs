@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://qqaazz2.github.io/dreader-docs",
 
   author: {
     name: "qqaazz2",
@@ -14,7 +14,7 @@ export default hopeTheme({
   logo: "/logo.svg",
   favicon: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/qqaazz2/DReader-docs",
 
   docsDir: "src",
 
@@ -27,16 +27,6 @@ export default hopeTheme({
   // 页脚
   footer: "",
   displayFooter: true,
-
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
-  },
 
   // 多语言配置
   metaLocales: {
