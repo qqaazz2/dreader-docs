@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://qqaazz2.github.io/dreader-docs/dreader-docs/sitemap.xml
