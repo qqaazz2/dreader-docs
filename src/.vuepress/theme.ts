@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://qqaazz2.github.io/dreader-docs",
+  hostname: "https://qqaazz2.github.io",
 
   author: {
     name: "qqaazz2",
@@ -14,7 +14,7 @@ export default hopeTheme({
   logo: "/logo.svg",
   favicon: "/logo.svg",
 
-  repo: "https://github.com/qqaazz2/DReader-docs",
+  repo: "https://github.com/qqaazz2/dreader-docs",
 
   docsDir: "src",
 
