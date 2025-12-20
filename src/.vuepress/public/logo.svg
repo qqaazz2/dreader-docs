@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 0. 定义：阴影和樱花 -->
+  <defs>
+    <!-- 柔和的书本投影 -->
+    <filter id="sakura_shadow" x="100" y="70" width="320" height="380" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#BE185D" flood-opacity="0.15"/>
+    </filter>
+    
+    <!-- 樱花花瓣形状 -->
+    <path id="petal" d="M10 0 C10 0 16 -8 24 0 C28 4 28 12 20 20 C12 28 0 28 0 28 C0 28 -12 28 -20 20 C-28 12 -28 4 -24 0 C-16 -8 10 0 10 0Z" />
+  </defs>
+
+  <!-- 1. 书本主体 -->
+  <g transform="translate(0 10)" filter="url(#sakura_shadow)">
+    
+    <!-- A. 封面底板 (极浅的樱花粉 #FFF1F2) -->
+    <path d="M170 90 H 370 C 374 90 378 94 378 98 V 404 C 378 408 374 412 370 412 H 170 V 90 Z" fill="#FFF1F2"/>
+    
+    <!-- B. 书脊 (柔和粉 #F472B6) -->
+    <path d="M134 90 H 170 V 412 H 134 C 129 412 126 408 126 404 V 98 C 126 94 129 90 134 90 Z" fill="#F472B6"/>
+    <rect x="134" y="90" width="4" height="322" fill="white" fill-opacity="0.3"/> <!-- 高光 -->
+    <rect x="170" y="90" width="1" height="322" fill="#BE185D" fill-opacity="0.1"/> <!-- 书沟 -->
+
+    <!-- D. 巨大的 E 水印 -->
+    <!-- 修改点：颜色变得非常淡 (#FFE4E6)，且增加了透明度，让它像真正的水印一样 "沉" 在纸里 -->
+    <path d="M225 190 H 335 V 220 H 255 V 255 H 315 V 285 H 255 V 320 H 335 V 350 H 225 V 190 Z" 
+          fill="#FFE4E6" fill-opacity="0.6"/>
+
+    <!-- E. 文本行 -->
+    <!-- 修改点：颜色大幅加深，形成鲜明对比 -->
+    <!-- 第一行：深玫瑰红 (#DB2777)，作为标题 -->
+    <rect x="200" y="230" width="150" height="16" rx="8" fill="#DB2777"/>
+    <!-- 后两行：中等粉色 (#F472B6)，作为正文，依然比背景深 -->
+    <rect x="200" y="270" width="100" height="16" rx="8" fill="#F472B6"/>
+    <rect x="200" y="310" width="130" height="16" rx="8" fill="#F472B6"/>
+    
+    <!-- F. 书签 (深玫红) -->
+    <path d="M148 90 V 160 L 158 150 L 168 160 V 90 H 148 Z" fill="#BE123C"/>
+    
+    <!-- G. 樱花元素装饰 (保持不变) -->
+    <g transform="translate(340 370) scale(0.8) rotate(-15)">
+      <circle cx="0" cy="0" r="8" fill="#FCE7F3"/> 
+      <use href="#petal" fill="#F472B6" transform="translate(0 -5) rotate(0) translate(0 -15)"/>
+      <use href="#petal" fill="#F472B6" transform="rotate(72) translate(0 -20)"/>
+      <use href="#petal" fill="#F472B6" transform="rotate(144) translate(0 -20)"/>
+      <use href="#petal" fill="#F472B6" transform="rotate(216) translate(0 -20)"/>
+      <use href="#petal" fill="#F472B6" transform="rotate(288) translate(0 -20)"/>
+      <circle cx="0" cy="0" r="6" fill="#FFF1F2"/>
+    </g>
+
+    <!-- 飘落的花瓣 -->
+    <use href="#petal" fill="#FB7185" transform="translate(190 140) scale(0.4) rotate(45)" fill-opacity="0.8"/>
+    <use href="#petal" fill="#FDA4AF" transform="translate(360 220) scale(0.5) rotate(-30)" fill-opacity="0.6"/>
+    <use href="#petal" fill="#BE123C" transform="translate(160 350) scale(0.3) rotate(10)" fill-opacity="0.4"/>
+  </g>
+</svg>
