@@ -32,10 +32,11 @@ DReader 目前已全面支持多个主流平台，您可以根据自己的使用
 
 | 平台 | 下载链接 | 备注 |
 | :--- | :--- | :--- |
-| **Windows** (桌面版) | [点此下载 Windows 客户端](https://github.com/qqaazz2/DReader/releases/download/v1.1.2/DReader-win.zip) | 适用于 Windows 10 及更高版本。 |
-| **Android** (移动版) | [点此下载 Android APK](https://github.com/qqaazz2/DReader/releases/download/v1.1.2/Dreader.apk) | 兼容大部分 Android 手机和平板。 |
-| **Web** (网页版) | (暂未提供) | 无需安装，与服务端一同部署，打开浏览器即可使用。 |
+| **Windows** (桌面版) | [点此下载 Windows 客户端](https://github.com/qqaazz2/DReader/releases/download/v1.1.3/DReader-win.zip) | 适用于 Windows 10 及更高版本。 |
+| **Android** (移动版) | [点此下载 Android APK](https://github.com/qqaazz2/DReader/releases/download/v1.1.3/Dreader.apk) | 兼容大部分 Android 手机和平板。 |
+| **Web** (网页版) | [点此下载 Web 网页版](https://github.com/qqaazz2/DReader/releases/download/v1.1.3/DReader-web.apk) | 无需安装，与服务端一同部署，打开浏览器即可使用。 |
 
+>**Web** (网页版) 将到部署服务端详细介绍
 ***
 
 ## 自行编译下载
